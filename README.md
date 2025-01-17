@@ -1,7 +1,7 @@
 # Protein--protein interaction prediction with interaction-specific learning and hierarchical structure information
 This repository contains an official implementation of HI-PPI and datasets used for evaluating PPI prediction model.
 ----
-Download the pre-generated structure features of SHS27K and SHS148K from https://drive.google.com/file/d/1SEplMBH36521XsG0yIDLY7X5xRaN7Ekb/view?usp=sharing and 
+Download the pre-generated structure features of SHS27K and SHS148K from https://drive.google.com/file/d/1SEplMBH36521XsG0yIDLY7X5xRaN7Ekb/view?usp=sharing and https://drive.google.com/file/d/1Lqyg05aTbXYTb-uXpl3F36TfY7VTmk-B/view?usp=sharing
 Unzip the file in the folder features
 ----
 ### Usage

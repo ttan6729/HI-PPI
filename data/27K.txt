@@ -1,0 +1,2 @@
+data/protein.SHS27k.sequences.dictionary.tsv
+data/protein.actions.SHS27k.STRING.txt

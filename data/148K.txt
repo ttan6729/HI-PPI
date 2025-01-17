@@ -1,0 +1,2 @@
+data/protein.SHS148k.sequences.dictionary.tsv
+data/protein.actions.SHS148k.STRING.txt

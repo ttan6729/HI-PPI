@@ -417,11 +417,11 @@ def read_structure_data(symbol,src_file,folder='features'):
 
 def generate_structure_feature(args,atom_file = 'src/atom_feature.txt'):
 
-	symbol = re.split('/|[.]',args.i)[-2]
+	symbol = args.o
 
 	seq_file = args.i1
 	int_file = args.i2
-	folder = args.structure_path
+	folder = args.sf
 	threshold = 8
 
 	file_list = []
@@ -465,13 +465,13 @@ def generate_structure_feature(args,atom_file = 'src/atom_feature.txt'):
 	
 
 	#os.system(f'mkdir -p {folder}')
-	torch.save(node_list,f'{args.i4}_node.pt')
-	torch.save(r_edge_list,f'{args.i4}_edge.pt')
-	torch.save(k_edge_list,f'{args.i4}_kneg.pt')
+	torch.save(node_list,f'{symbol}_node.pt')
+	torch.save(r_edge_list,f'{symbol}_edge.pt')
+	torch.save(k_edge_list,f'{symbol}_kneg.pt')
 	#np.save(f'{folder}/{symbol}_edge.npy',np.array(r_edge_list))
 	#np.save(f'{folder}/{symbol}_kneg.npy',np.array(k_edge_list))
 
-	print(f'feature files saved to pt file with prefix {folder}/{symbol}_')
+	print(f'feature files saved to pt file with prefix {symbol}')
 	
 
 

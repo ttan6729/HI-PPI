@@ -4,7 +4,7 @@ This repository contains an official implementation of HI-PPI and datasets used 
 ## Setup
 ```
 Download the pre-generated structure features of SHS27K and SHS148K from [SHS27K data]
-[SHS27K data]:https://drive.google.com/file/d/1SEplMBH36521XsG0yIDLY7X5xRaN7Ekb/view?usp=sharing and https://drive.google.com/file/d/1Lqyg05aTbXYTb-uXpl3F36TfY7VTmk-B/view?usp=sharing
+<a href='https://drive.google.com/file/d/1SEplMBH36521XsG0yIDLY7X5xRaN7Ekb/view?usp=sharing and https://drive.google.com/file/d/1Lqyg05aTbXYTb-uXpl3F36TfY7VTmk-B/view?usp=sharing'>SHS27Kdata<\a>
 ```
 Unzip the file in the folder features
 ----

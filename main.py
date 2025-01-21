@@ -140,10 +140,9 @@ def get_args_parser():
 	parser.add_argument('-i1',default=None,type=str,help='sequence file')
 	parser.add_argument('-i2',default=None,type=str,help='relation file')
 	parser.add_argument('-i3',default=None,type=str,help='file path of test set indices (for read mode)')
-	parser.add_argument('-i4',default=None,type=str,help='prefix for the path of embedding')
+	parser.add_argument('-i4',default=None,type=str,help='prefix for the pre generated structure')
 	parser.add_argument('-s1',default='/home/user1/code/PPI4/data/structure_data',type=str,help='file path for structure file')
 	#parser.add_argument('-i4',default='../data/map1.csv',type=str,help='file path for map STRING id to uniref id')
-	parser.add_argument('-structure_path',default='/home/user1/code/PPI4/data/structure_data/STRING/',type=str,help='the directory that contain pdb file')
 	parser.add_argument('-e',default=50,type=int,help='epochs')
 	parser.add_argument('-b', default=256, type=int,help='batch size')
 	parser.add_argument('-ln', default=2, type=int,help='graph layer num')
@@ -156,9 +155,10 @@ def get_args_parser():
 	parser.add_argument('-force',default=True,type=str2bool,help='if write to existed output file')
 	parser.add_argument('-mainfold',default='Hyperboloid',type=str,help='any of the following: Euclidean, Hyperboloid, PoincareBall')
 	parser.add_argument('-pr',default=0.0,type=float,help='perturbation ratio')
-	parser.add_argument('-aly',default=False,type=str2bool,help='if analyze the hierarchical level')
+	parser.add_argument('-sf',default=None,type=str,help='pfolder that contain pdb file')
 	return parser
 
+python3 main.py -m data -i1 [seq file] -i2 [interaction file]
 
 
 #cd /home/user1/code/PPI4/HI-PPI && source /home/user1/code/PPIKG/env/bin/activate

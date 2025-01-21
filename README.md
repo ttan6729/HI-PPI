@@ -8,35 +8,37 @@ This repository contains an official implementation of HI-PPI and datasets used 
 ```
 python3 main.py -m bfs -t HI-PPI -i 27K.txt -i4 27K -o test -e 100 -mainfold Hyperboloid
 ```
-```
-Unzip the file in the folder features
-----
+
 ### Usage
 
 ```
-usage: HIPPI [-h] [-m M] [-o O] [-i I] [-i1 I1] [-i2 I2] [-i3 I3] [-e E] [-b B] [-ln LN] [-L L]
-            [-Loss LOSS] [-jk JK] [-ff FF] [-hl HL] [-sv SV] [-cuda CUDA] [-force FORCE]
-            [-PSSM PSSM]
+usage: PPIM [-h] [-m M] [-o O] [-t T] [-i I] [-i1 I1] [-i2 I2] [-i3 I3] [-i4 I4] [-s1 S1] [-e E] [-b B] [-ln LN] [-L L]
+            [-Loss LOSS] [-ff FF] [-hl HL] [-sv SV] [-cuda CUDA] [-force FORCE] [-mainfold MAINFOLD] [-pr PR]
 
 options:
-  -h, --help    show this help message and exit
-  -m M          mode, optinal value: read,bfs,dfs,rand,
+  -h, --help          show this help message and exit
+  -m M                mode, optinal value: bfs,dfs,rand,read,data
   -o O
-  -i I
-  -i1 I1        sequence file
-  -i2 I2        relation file
-  -i3 I3        file path of test set indices (for read mode)
-  -e E          epochs
-  -b B          batch size
-  -ln LN        graph layer num
-  -L L          length for sequence padding
-  -Loss LOSS    loss function
-  -jk JK        use jump knowledege to fuse pair or not
-  -ff FF        option for protein pair representaion
-  -hl HL        hidden layer
-  -sv SV        if save dataset path
-  -cuda CUDA    if use cuda
-  -force FORCE  if write to existed output file
+  -t T                for test distintct models
+  -i I                path for sequnce and relation file
+  -i1 I1              sequence file
+  -i2 I2              relation file
+  -i3 I3              file path of test set indices (for read mode)
+  -i4 I4              prefix for the path of embedding
+  -s1 S1              file path for structure file
+  -e E                epochs
+  -b B                batch size
+  -ln LN              graph layer num
+  -L L                length for sequence padding
+  -Loss LOSS          loss function
+  -ff FF              feature fusion option, default mul
+  -hl HL              hidden layer
+  -sv SV              if save dataset path
+  -cuda CUDA          if use cuda
+  -force FORCE        if write to existed output file
+  -mainfold MAINFOLD  any of the following: Euclidean, Hyperboloid, PoincareBall
+  -pr PR              perturbation ratio
+
 ```
 ### Sample command for training and testing
 ```

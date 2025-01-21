@@ -4,6 +4,10 @@ This repository contains an official implementation of HI-PPI and datasets used 
 ## Setup
 1. Item Download the code in https://github.com/ttan6729/HI-PPI .
 2. Item Download and unzip the pre-generated structure features of SHS27K and SHS148K in the same folder from [SHS27K data](https://drive.google.com/file/d/1SEplMBH36521XsG0yIDLY7X5xRaN7Ekb/view?usp=sharing) and [SHS148K data ](https://drive.google.com/file/d/1SEplMBH36521XsG0yIDLY7X5xRaN7Ekb/view?usp=sharing).
+3. See usage for the command of HI-PPI, sample command for the prvoided data:
+```
+python3 main.py -m bfs -t HI-PPI -i 27K.txt -i4 27K -o test -e 100 -mainfold Hyperboloid
+```
 ```
 Unzip the file in the folder features
 ----

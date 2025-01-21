@@ -2,7 +2,8 @@
 This repository contains an official implementation of HI-PPI and datasets used for evaluating PPI prediction model.
 ----
 ## Setup
-Download the pre-generated structure features of SHS27K and SHS148K from [SHS27K data](https://drive.google.com/file/d/1SEplMBH36521XsG0yIDLY7X5xRaN7Ekb/view?usp=sharing) and [SHS148K](https://drive.google.com/file/d/1SEplMBH36521XsG0yIDLY7X5xRaN7Ekb/view?usp=sharing)
+- Download the code in https://github.com/ttan6729/HI-PPI/
+- Download and unzip the pre-generated structure features of SHS27K and SHS148K in the same folder from [SHS27K data](https://drive.google.com/file/d/1SEplMBH36521XsG0yIDLY7X5xRaN7Ekb/view?usp=sharing) and [SHS148K](https://drive.google.com/file/d/1SEplMBH36521XsG0yIDLY7X5xRaN7Ekb/view?usp=sharing)
 ```
 Unzip the file in the folder features
 ----

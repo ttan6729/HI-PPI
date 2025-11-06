@@ -3,7 +3,7 @@ This repository contains an official implementation of HI-PPI and datasets used 
 ----
 ## Setup
 1. Download the code in https://github.com/ttan6729/HI-PPI .
-2. Download and unzip the pre-generated structure features of SHS27K and SHS148K in the same folder from [SHS27K data](https://drive.google.com/file/d/1SEplMBH36521XsG0yIDLY7X5xRaN7Ekb/view?usp=sharing) and [SHS148K data ](https://drive.google.com/file/d/1SEplMBH36521XsG0yIDLY7X5xRaN7Ekb/view?usp=sharing). Or generate the features based on other PPI data: ```python3 main.py -m data -i1 [sequence file]  -i2 [interaction file] -sf [folder that contains pdb file of each protein] -o [output name]```
+2. Download and unzip the pre-generated structure features of SHS27K and SHS148K in the same folder from [SHS27K data](https://drive.google.com/file/d/1SEplMBH36521XsG0yIDLY7X5xRaN7Ekb/view?usp=sharing) and [SHS148K data ](https://drive.google.com/file/d/1Lqyg05aTbXYTb-uXpl3F36TfY7VTmk-B/view?usp=sharing). Or generate the features based on other PPI data: ```python3 main.py -m data -i1 [sequence file]  -i2 [interaction file] -sf [folder that contains pdb file of each protein] -o [output name]```
 3. See usage for the command of HI-PPI, sample command for the prvoided data:
 ```
 python3 main.py -m bfs -t HI-PPI -i 27K.txt -i4 27K -o test -e 100 -mainfold Hyperboloid
